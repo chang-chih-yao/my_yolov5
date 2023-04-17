@@ -380,6 +380,8 @@ def check_version(current='0.0.0', minimum='0.0.0', name='version ', pinned=Fals
 
 @TryExcept()
 def check_requirements(requirements=ROOT / 'requirements.txt', exclude=(), install=True, cmds=''):
+    print('dont check requirements')
+    '''
     # Check installed dependencies meet YOLOv5 requirements (pass *.txt file or list of packages or single package str)
     prefix = colorstr('red', 'bold', 'requirements:')
     check_python()  # check python version
@@ -411,6 +413,7 @@ def check_requirements(requirements=ROOT / 'requirements.txt', exclude=(), insta
             LOGGER.info(s)
         except Exception as e:
             LOGGER.warning(f'{prefix} ❌ {e}')
+    '''
 
 
 def check_img_size(imgsz, s=32, floor=0):
