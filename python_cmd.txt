@@ -1,0 +1,6 @@
+python classify/train.py --model yolov5l-cls.pt --data ..\Dataset\gta\final_dataset\1\ --epochs 10 --img 224 --cache
+
+python train.py --img 640 --batch 16 --epochs 80 --data ..\toboflow_dataset\my_aug-2\data.yaml --weights yolov5s.pt --cache disk
+python export.py --weights best.pt --include onnx
+
+python train.py --img 640 --batch 16 --epochs 40 --data ..\Dataset\animal_restaurant\final_dataset\3\data.yaml --weights yolov5m.pt --cache disk
