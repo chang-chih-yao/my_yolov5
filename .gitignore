@@ -1,0 +1,21 @@
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+__pycache__/
+.vscode/
+
+# AI model
+*.pt
+*.onnx
+
+my_build/
+build_required_dll/
+
+test.py
+
+detect_error_img/*
+!detect_error_img/README.md
