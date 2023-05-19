@@ -7,6 +7,7 @@ ipython  # interactive notebook
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python>=4.1.1
+# opencv-contrib-python     4.7.0.72
 Pillow>=7.1.2
 psutil  # system resources
 PyYAML>=5.3.1
@@ -19,7 +20,7 @@ tqdm>=4.64.0
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
 
 # Logging ---------------------------------------------------------------------
-tensorboard>=2.4.1
+# tensorboard>=2.4.1
 # clearml>=1.2.0
 # comet
 
